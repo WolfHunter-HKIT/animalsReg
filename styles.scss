@@ -10,7 +10,7 @@ body {
 	justify-content: center;
 	gap: 6vw;
 	margin-top: 5vh;
-	button {
+	.ctrlBtn {
 		font-size: 30px;
 		color: bisque;
 		background-color: darkslateblue;
@@ -23,10 +23,6 @@ body {
 			background-color: rgb(40, 34, 75);
 		}
 	}
-}
-
-.active {
-	background-color: rgb(123, 109, 199) !important;
 }
 
 form {

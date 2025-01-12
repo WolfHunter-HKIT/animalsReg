@@ -1,50 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Document</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
+	<body>
+		<div id="controls">
+			<button id="dogBtn" class="ctrlBtn">Dogs</button>
+			<button id="catBtn" class="ctrlBtn">Cats</button>
+			<button id="birdBtn" class="ctrlBtn">Birds</button>
+		</div>
 
-<body>
-    <div id="controls">
-        <button id="dogBtn" class="ctrlBtn active">Dogs</button>
-        <button id="catBtn" class="ctrlBtn">Cats</button>
-        <button id="birdBtn" class="ctrlBtn">Birds</button>
-    </div>
+		<form id="dogForm">
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name" />
+			<label for="age">Age:</label>
+			<input type="number" name="age" id="age" />
+			<label for="legs">Leg Count:</label>
+			<input type="number" name="legs" id="legs" />
+			<label for="fur">Fur color:</label>
+			<input type="number" name="fur" id="fur" />
+			<label for="tail">Tail pattern:</label>
+			<input type="number" name="tail" id="tail" />
+			<label for="muzzle">Muzzle length:</label>
+			<input type="number" name="muzzle" id="muzzle" />
+			<button type="submit" class="submit" id="submitDog">Submit</button>
+		</form>
+		<form id="catForm">
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name" />
+			<label for="age">Age:</label>
+			<input type="number" name="age" id="age" />
+			<label for="legs">Leg Count:</label>
+			<input type="number" name="legs" id="legs" />
+			<label for="fur">Fur color:</label>
+			<input type="number" name="fur" id="fur" />
+			<label for="tail">Tail pattern:</label>
+			<input type="number" name="tail" id="tail" />
+			<label for="whiskers">Whiskers length:</label>
+			<input type="number" name="whiskers" id="whiskers" />
+			<button type="submit" class="submit" id="submitCat">Submit</button>
+		</form>
+		<form id="birdForm">
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name" />
+			<label for="age">Age:</label>
+			<input type="number" name="age" id="age" />
+			<label for="legs">Leg Count:</label>
+			<input type="number" name="legs" id="legs" />
+			<label for="wings">Wing color:</label>
+			<input type="number" name="wings" id="wings" />
+			<label for="beak">Beak length:</label>
+			<input type="number" name="beak" id="beak" />
+			<button type="submit" class="submit" id="submitBird">Submit</button>
+		</form>
 
-    <form id='dogForm'>
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name">
-        <label for="age">Age:</label>
-        <input type="number" name="age" id="age">
-        <label for="legs">Leg Count:</label>
-        <input type="number" name="legs" id="legs">
-        <button type="submit" class="submit" id="submitDog">Submit</button>
-    </form>
-    <form id="catForm">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name">
-        <label for="age">Age:</label>
-        <input type="number" name="age" id="age">
-        <label for="legs">Leg Count:</label>
-        <input type="number" name="legs" id="legs">
-        <button type="submit" class="submit" id="submitCat">Submit</button>
-    </form>
-    <form id="birdForm">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name">
-        <label for="age">Age:</label>
-        <input type="number" name="age" id="age">
-        <label for="legs">Leg Count:</label>
-        <input type="number" name="legs" id="legs">
-        <button type="submit" class="submit" id="submitBird">Submit</button>
-    </form>
+		<div class="displays">
+			<div id="dogDisplay"></div>
+			<div id="catDisplay"></div>
+			<div id="birdDisplay"></div>
+		</div>
 
-    <script src="script.js"></script>
-</body>
-
+		<script src="script.js"></script>
+	</body>
 </html>

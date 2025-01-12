@@ -1,26 +1,17 @@
 body {
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: gray;
 }
 
 #controls {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   gap: 6vw;
   margin-top: 5vh;
 }
-
-#controls button {
+#controls .ctrlBtn {
   font-size: 30px;
   color: bisque;
   background-color: darkslateblue;
@@ -28,34 +19,21 @@ body {
   border: 2px solid white;
   border-radius: 10px;
 }
-
-#controls button:hover {
+#controls .ctrlBtn:hover {
   cursor: pointer;
-  background-color: #28224b;
-}
-
-.active {
-  background-color: #7b6dc7 !important;
+  background-color: rgb(40, 34, 75);
 }
 
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: burlywood;
   margin: 5vh auto;
   width: 45vw;
 }
-
 form#catForm {
   display: none;
 }
-
 form#birdForm {
   display: none;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
