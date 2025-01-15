@@ -60,9 +60,56 @@
 		</form>
 
 		<div class="displays">
-			<div id="dogDisplay"></div>
-			<div id="catDisplay"></div>
-			<div id="birdDisplay"></div>
+			<table id="dogShow">
+				<thead>
+					<tr>
+						<th colspan="6">Dogs</th>
+					</tr>
+					<tr>
+						<th>NAME</th>
+						<th>AGE</th>
+						<th>LEG COUNT</th>
+						<th>FUR COLOR</th>
+						<th>TAIL PATTERN</th>
+						<th>MUZZLE LENGTH</th>
+					</tr>
+				</thead>
+				<tbody id="dogDisplay"></tbody>
+			</table>
+			<table id="catShow">
+				<thead>
+					<tr>
+						<th colspan="6">Cats</th>
+					</tr>
+					<tr>
+						<th>NAME</th>
+						<th>AGE</th>
+						<th>LEG COUNT</th>
+						<th>FUR COLOR</th>
+						<th>TAIL PATTERN</th>
+						<th>WHISKER LENGTH</th>
+					</tr>
+				</thead>
+				<tbody id="catDisplay"></tbody>
+			</table>
+			<table id="birdShow">
+				<thead>
+					<tr>
+						<th colspan="5">Birds</th>
+					</tr>
+					<tr>
+						<th>NAME</th>
+						<th>AGE</th>
+						<th>LEG COUNT</th>
+						<th>WING COLOR</th>
+						<th>BEAK LENGTH</th>
+					</tr>
+				</thead>
+				<tbody id="birdDisplay"></tbody>
+			</table>
+			<button id="clearDogs">Clear Dog list</button>
+			<button id="clearCats">Clear Cat list</button>
+			<button id="clearBirds">Clear Bird list</button>
 		</div>
 
 		<script src="script.js"></script>

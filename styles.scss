@@ -1,3 +1,9 @@
+$primaryColor: darkslateblue;
+$secondaryColor: rgb(119, 107, 196);
+$tertiary: rgb(35, 30, 67);
+$accentColor: rgb(40, 34, 75);
+$text: bisque;
+
 body {
 	margin: 0;
 	box-sizing: border-box;
@@ -12,15 +18,15 @@ body {
 	margin-top: 5vh;
 	.ctrlBtn {
 		font-size: 30px;
-		color: bisque;
-		background-color: darkslateblue;
+		color: $text;
+		background-color: $primaryColor;
 		padding: 1% 2%;
 		border: 2px solid white;
 		border-radius: 10px;
 
 		&:hover {
 			cursor: pointer;
-			background-color: rgb(40, 34, 75);
+			background-color: $accentColor;
 		}
 	}
 }
@@ -28,14 +34,105 @@ body {
 form {
 	display: flex;
 	flex-direction: column;
-	background-color: burlywood;
+	justify-content: center;
+	align-items: center;
+	color: $text;
+	font-size: 18px;
+	font-weight: 700;
+	border: 5px solid $secondaryColor;
+	border-radius: 25px 5px;
+	background-color: $tertiary;
 	margin: 5vh auto;
+	padding: 2vh 0;
 	width: 45vw;
+
+	input {
+		width: 80%;
+		font-size: 18px;
+		border-radius: 5px;
+		text-align: center;
+		border: 2px solid $secondaryColor;
+		background-color: $primaryColor;
+		color: $text;
+	}
+
+	label {
+		margin-top: 2%;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	button {
+		margin-top: 2%;
+		font-size: 25px;
+		border: 2px solid $secondaryColor;
+		border-radius: 5px;
+		background-color: $primaryColor;
+		color: $text;
+
+		&:hover {
+			cursor: pointer;
+			background-color: $accentColor;
+		}
+	}
 
 	&#catForm {
 		display: none;
 	}
 	&#birdForm {
 		display: none;
+	}
+}
+
+.displays {
+	display: flex;
+	flex-direction: column;
+	gap: 1vh;
+	max-width: 65vw;
+	min-width: 500px;
+	font-size: 20px;
+	color: $text;
+	justify-content: space-around;
+	text-align: center;
+	margin: 0 auto;
+	table {
+		background-color: $tertiary;
+		border: 5px solid $secondaryColor;
+		border-radius: 25px 5px;
+		padding: 10px;
+		tr {
+			&:first-child {
+				th {
+					font-size: 25px;
+					text-shadow: $primaryColor 1px 1px 5px;
+				}
+			}
+		}
+		th {
+			border: 2px solid $secondaryColor;
+			border-radius: 3px;
+			text-shadow: 2px 2px black;
+		}
+		td {
+			border-radius: 3px;
+			border: 2px solid $secondaryColor;
+		}
+	}
+
+	button {
+		margin-top: 2%;
+		font-size: 25px;
+		width: 40%;
+		margin: 0 auto;
+		border: 2px solid $secondaryColor;
+		border-radius: 5px;
+		background-color: $tertiary;
+		color: $text;
+
+		&:hover {
+			cursor: pointer;
+			background-color: $primaryColor;
+		}
 	}
 }
